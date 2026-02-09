@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PrintMart — Account</title>
+    <meta name="description" content="User dashboard with account info and order history (mocked)." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="PrintMart home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            PrintMart
+            <small>3D print shop marketplace (MVP UI)</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="./index.html">Catalog</a>
+          <a href="./account.html" aria-current="page">Account</a>
+          <a href="./review.html">Write a review</a>
+        </nav>
+
+        <div class="header-actions" aria-label="Quick actions">
+          <a class="pill" href="./cart.html" aria-label="Go to cart">
+            Cart <span class="badge" aria-label="Items in cart">3</span>
+          </a>
+          <span class="pill" aria-label="Logged in user">
+            Signed in as <strong>Alex Rivera</strong>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <div class="container">
+        <header class="page-header">
+          <h1>Account dashboard</h1>
+          <p>Profile info and order history for a logged-in customer (mocked). Includes 3 orders to represent dynamic data.</p>
+        </header>
+
+        <div class="split" aria-label="Account layout">
+          <section class="panel" aria-label="Account information">
+            <h2>Profile</h2>
+            <table class="table" aria-label="Profile information" style="margin-top: var(--space-4)">
+              <thead>
+                <tr>
+                  <th scope="col">Field</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td>Alex Rivera</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>alex.rivera@example.com</td>
+                </tr>
+                <tr>
+                  <td>Default shipping</td>
+                  <td>123 Market St, San Jose, CA 95112</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Saved preferences</h3>
+            <div class="grid" aria-label="Preferences form" style="margin-top: var(--space-3)">
+              <div class="field">
+                <label for="pref_material">Preferred material</label>
+                <select id="pref_material" class="control">
+                  <option selected>PLA</option>
+                  <option>PETG</option>
+                  <option>Resin</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="pref_notify">Order notifications</label>
+                <select id="pref_notify" class="control">
+                  <option selected>Email</option>
+                  <option>SMS</option>
+                  <option>None</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="btnrow" aria-label="Account actions" style="margin-top: var(--space-5)">
+              <a class="btn" href="./index.html">Browse products</a>
+              <a class="btn ghost" href="./account.html" aria-label="Save settings (mock)">Save settings (mock)</a>
+            </div>
+          </section>
+
+          <aside class="panel" aria-label="Order history">
+            <h2>Order history</h2>
+            <p class="muted">Statuses reflect the proposal’s idea of order tracking.</p>
+
+            <table class="table" aria-label="Order history table" style="margin-top: var(--space-4)">
+              <thead>
+                <tr>
+                  <th scope="col">Order</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Items</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>#PM-1042</code></td>
+                  <td>Feb 2, 2026</td>
+                  <td><span class="chip">Shipped</span></td>
+                  <td class="muted">Desk Organizer (2), Keycaps (1)</td>
+                </tr>
+                <tr>
+                  <td><code>#PM-1031</code></td>
+                  <td>Jan 21, 2026</td>
+                  <td><span class="chip">Processing</span></td>
+                  <td class="muted">Crystal Dragon (1)</td>
+                </tr>
+                <tr>
+                  <td><code>#PM-1019</code></td>
+                  <td>Jan 3, 2026</td>
+                  <td><span class="chip">Completed</span></td>
+                  <td class="muted">Cable clips (6), Phone stand (1)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="btnrow" aria-label="Order actions" style="margin-top: var(--space-5)">
+              <a class="btn primary" href="./review.html">Leave a product review</a>
+              <a class="btn ghost" href="./product.html">Reopen last item</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>Static MVP UI. “Login” is assumed for this milestone.</small>
+      </div>
+    </footer>
+  </body>
+</html>

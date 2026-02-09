@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PrintMart — Product details</title>
+    <meta name="description" content="Product details with specs, 3D preview placeholder, and customer reviews (mocked)." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="PrintMart home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            PrintMart
+            <small>3D print shop marketplace (MVP UI)</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="./index.html">Catalog</a>
+          <a href="./account.html">Account</a>
+          <a href="./review.html">Write a review</a>
+        </nav>
+
+        <div class="header-actions" aria-label="Quick actions">
+          <a class="pill" href="./cart.html" aria-label="Go to cart">
+            Cart <span class="badge" aria-label="Items in cart">3</span>
+          </a>
+          <span class="pill" aria-label="Logged in user">
+            Signed in as <strong>Alex Rivera</strong>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <div class="container">
+        <header class="page-header">
+          <h1>Modular Desk Organizer</h1>
+          <p>Individual listing page with images, price, specs, and reviews. (3D model preview is mocked.)</p>
+        </header>
+
+        <div class="split" aria-label="Product page layout">
+          <section class="panel" aria-label="Product overview">
+            <div class="thumb" role="img" aria-label="Product image: Modular Desk Organizer"></div>
+
+            <div class="kpis" style="margin-top: var(--space-4)" aria-label="Product highlights">
+              <span class="chip">PLA</span>
+              <span class="chip">4.7★ (128 reviews)</span>
+              <span class="chip">Ready to ship</span>
+            </div>
+
+            <h2 style="margin-top: var(--space-5)">About</h2>
+            <p>
+              A modular set of trays you can stack and reconfigure. Great for pens, cables, SD cards, and desk odds
+              and ends.
+            </p>
+
+            <h3>Specifications</h3>
+            <table class="table" aria-label="Product specifications table">
+              <thead>
+                <tr>
+                  <th scope="col">Spec</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dimensions</td>
+                  <td>180 × 120 × 45 mm (tray)</td>
+                </tr>
+                <tr>
+                  <td>Material</td>
+                  <td>PLA (multiple colors available)</td>
+                </tr>
+                <tr>
+                  <td>Finish</td>
+                  <td>Matte, light sanding</td>
+                </tr>
+                <tr>
+                  <td>Lead time</td>
+                  <td>2–3 business days</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="btnrow" aria-label="Product actions">
+              <a class="btn primary" href="./cart.html">Add to cart</a>
+              <a class="btn ghost" href="./index.html">Back to catalog</a>
+            </div>
+          </section>
+
+          <aside class="panel" aria-label="3D preview and reviews">
+            <h2>3D preview</h2>
+            <p class="muted">Static placeholder for an interactive 3D model viewer.</p>
+            <div class="thumb" role="img" aria-label="3D preview placeholder" style="height: 220px; margin-top: var(--space-4)"></div>
+
+            <hr class="hr" />
+
+            <h2>Customer reviews</h2>
+            <p class="muted">Mocked review list (3 instances) to depict dynamic content.</p>
+
+            <table class="table" aria-label="Customer reviews table" style="margin-top: var(--space-4)">
+              <thead>
+                <tr>
+                  <th scope="col">Reviewer</th>
+                  <th scope="col">Rating</th>
+                  <th scope="col">Comment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jamie P.</td>
+                  <td><code>5/5</code></td>
+                  <td>Perfect fit for my desk drawer. The stackable feature is super useful.</td>
+                </tr>
+                <tr>
+                  <td>Sam K.</td>
+                  <td><code>4/5</code></td>
+                  <td>Good quality print. I’d love one more divider option, but overall great.</td>
+                </tr>
+                <tr>
+                  <td>Taylor W.</td>
+                  <td><code>5/5</code></td>
+                  <td>Arrived fast and looks clean. Holds my cables + USB drives nicely.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="btnrow" aria-label="Review actions">
+              <a class="btn" href="./review.html">Write a review</a>
+              <a class="btn ghost" href="./account.html">View order history</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>Static MVP UI for Dynamic Web Dev. Links are internal and functional.</small>
+      </div>
+    </footer>
+  </body>
+</html>

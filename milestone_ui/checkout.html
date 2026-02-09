@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PrintMart — Checkout</title>
+    <meta name="description" content="Checkout page for reviewing an order and submitting (no payment processing in MVP)." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="PrintMart home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            PrintMart
+            <small>3D print shop marketplace (MVP UI)</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="./index.html">Catalog</a>
+          <a href="./account.html">Account</a>
+          <a href="./review.html">Write a review</a>
+        </nav>
+
+        <div class="header-actions" aria-label="Quick actions">
+          <a class="pill" href="./cart.html" aria-label="Go to cart">
+            Cart <span class="badge" aria-label="Items in cart">3</span>
+          </a>
+          <span class="pill" aria-label="Logged in user">
+            Signed in as <strong>Alex Rivera</strong>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <div class="container">
+        <header class="page-header">
+          <h1>Checkout</h1>
+          <p>Review your order and submit it to the system (mocked). No payment processing in MVP.</p>
+        </header>
+
+        <div class="split" aria-label="Checkout layout">
+          <section class="panel" aria-label="Shipping and contact form">
+            <h2>Shipping & contact</h2>
+            <p class="muted">Form is static; fields are included to depict the final product.</p>
+
+            <div class="grid" style="margin-top: var(--space-4)">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" class="control" type="email" value="alex.rivera@example.com" />
+              </div>
+
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" class="control" type="text" value="Alex Rivera" />
+              </div>
+
+              <div class="field">
+                <label for="addr1">Address line 1</label>
+                <input id="addr1" class="control" type="text" value="123 Market St" />
+              </div>
+
+              <div class="field">
+                <label for="addr2">Address line 2 (optional)</label>
+                <input id="addr2" class="control" type="text" placeholder="Apartment, suite, etc." />
+              </div>
+
+              <div class="field">
+                <label for="city">City</label>
+                <input id="city" class="control" type="text" value="San Jose" />
+              </div>
+
+              <div class="field">
+                <label for="state">State</label>
+                <select id="state" class="control">
+                  <option>CA</option>
+                  <option>NY</option>
+                  <option>WA</option>
+                  <option>TX</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="zip">ZIP</label>
+                <input id="zip" class="control" type="text" inputmode="numeric" value="95112" />
+              </div>
+
+              <div class="field">
+                <label for="ship">Shipping method</label>
+                <select id="ship" class="control">
+                  <option selected>Standard (3–5 days) — $6.00</option>
+                  <option>Express (1–2 days) — $14.00</option>
+                  <option>Local pickup — Free</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="btnrow" aria-label="Checkout actions" style="margin-top: var(--space-5)">
+              <a class="btn primary" href="./account.html">Submit order (mock)</a>
+              <a class="btn ghost" href="./cart.html">Back to cart</a>
+            </div>
+          </section>
+
+          <aside class="panel" aria-label="Order summary">
+            <h2>Order summary</h2>
+            <table class="table" aria-label="Order summary items" style="margin-top: var(--space-4)">
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Line total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Modular Desk Organizer</td>
+                  <td><code>2</code></td>
+                  <td><strong>$36.00</strong></td>
+                </tr>
+                <tr>
+                  <td>Mechanical Keycap Set (3 pack)</td>
+                  <td><code>1</code></td>
+                  <td><strong>$12.00</strong></td>
+                </tr>
+                <tr>
+                  <td>Articulated Crystal Dragon</td>
+                  <td><code>1</code></td>
+                  <td><strong>$32.00</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="summary" style="margin-top: var(--space-5)" aria-label="Order totals">
+              <div class="summary-row">
+                <span class="muted">Subtotal</span>
+                <strong>$80.00</strong>
+              </div>
+              <div class="summary-row">
+                <span class="muted">Shipping</span>
+                <strong>$6.00</strong>
+              </div>
+              <div class="summary-row">
+                <span class="muted">Tax (est.)</span>
+                <strong>$6.40</strong>
+              </div>
+              <hr class="hr" />
+              <div class="summary-row">
+                <span>Total</span>
+                <strong>$92.40</strong>
+              </div>
+            </div>
+
+            <p class="muted" style="margin-top: var(--space-4)">
+              Payment: not implemented in MVP (intentionally).
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>Static MVP UI. Submission should contain only HTML/CSS files (plus your PDF if desired).</small>
+      </div>
+    </footer>
+  </body>
+</html>
