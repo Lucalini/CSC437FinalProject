@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PrintMart — Write a review</title>
+    <meta name="description" content="Product review page (accessible after ordering) with mocked form controls." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <main id="main" class="page">
+      <div class="container">
+        <header class="page-header">
+          <h1>Leave a review</h1>
+          <p>In the final product, this would be available after ordering. Here it’s a static form with populated selects.</p>
+        </header>
+
+        <div class="split" aria-label="Review layout">
+          <section class="panel" aria-label="Review form">
+            <h2>Review details</h2>
+
+            <div class="grid" style="margin-top: var(--space-4)">
+              <div class="field">
+                <label for="order">Order</label>
+                <select id="order" class="control">
+                  <option selected>#PM-1042 (Feb 2, 2026)</option>
+                  <option>#PM-1031 (Jan 21, 2026)</option>
+                  <option>#PM-1019 (Jan 3, 2026)</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="product">Product</label>
+                <select id="product" class="control">
+                  <option selected>Modular Desk Organizer</option>
+                  <option>Mechanical Keycap Set (3 pack)</option>
+                  <option>Articulated Crystal Dragon</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="rating">Rating</label>
+                <select id="rating" class="control">
+                  <option>5 — Excellent</option>
+                  <option selected>4 — Good</option>
+                  <option>3 — Okay</option>
+                  <option>2 — Poor</option>
+                  <option>1 — Bad</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="title">Title</label>
+                <input id="title" class="control" type="text" value="Clean print and very useful" />
+              </div>
+
+              <div class="field">
+                <label for="comment">Review</label>
+                <textarea id="comment" class="control" rows="5">The organizer looks great on my desk and the trays stack nicely. Shipping was quick and the finish is smooth.</textarea>
+              </div>
+            </div>
+
+            <div class="btnrow" aria-label="Review actions" style="margin-top: var(--space-5)">
+              <a class="btn primary" href="./product.html">Submit review (mock)</a>
+              <a class="btn ghost" href="./account.html">Back to account</a>
+            </div>
+          </section>
+
+          <aside class="panel" aria-label="Guidelines">
+            <h2>Guidelines</h2>
+            <p class="muted">
+              Reviews appear on the product page. In MVP, a review includes a rating and comment, tied to a completed order.
+            </p>
+
+            <h3 style="margin-top: var(--space-5)">Where it shows up</h3>
+            <p class="muted">See the mocked review list on the product page.</p>
+
+            <div class="btnrow" style="margin-top: var(--space-4)">
+              <a class="btn" href="./product.html">View product reviews</a>
+              <a class="btn ghost" href="./index.html">Return to catalog</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>Static MVP UI for Dynamic Web Dev. Form submissions do not persist.</small>
+      </div>
+    </footer>
+    <script type="module" src="./header.mjs"></script>
+  </body>
+</html>
