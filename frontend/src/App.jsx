@@ -8,24 +8,26 @@ import CheckoutPage from "./pages/CheckoutPage";
 import AccountPage from "./pages/AccountPage";
 import ReviewPage from "./pages/ReviewPage";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 import "./App.css";
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <AppProvider>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<CatalogPage />} />
-            <Route path="/product/:id" element={<ProductPage />} />
-            <Route path="/cart" element={<CartPage />} />
-            <Route path="/checkout" element={<CheckoutPage />} />
-            <Route path="/account" element={<AccountPage />} />
-            <Route path="/review" element={<ReviewPage />} />
-            <Route path="/login" element={<LoginPage />} />
-          </Route>
-        </Routes>
-      </AppProvider>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <AppProvider>
+                <Routes>
+                    <Route element={<Layout />}>
+                        <Route path="/" element={<CatalogPage />} />
+                        <Route path="/product/:id" element={<ProductPage />} />
+                        <Route path="/cart" element={<CartPage />} />
+                        <Route path="/checkout" element={<CheckoutPage />} />
+                        <Route path="/account" element={<AccountPage />} />
+                        <Route path="/review" element={<ReviewPage />} />
+                        <Route path="/login" element={<LoginPage />} />
+                        <Route path="/register" element={<RegisterPage />} />
+                    </Route>
+                </Routes>
+            </AppProvider>
+        </BrowserRouter>
+    );
 }

@@ -80,7 +80,7 @@ export default function Header() {
 
           {user ? (
             <span className="pill" aria-label="Logged in user">
-              <strong>{user.name}</strong>
+              <strong>{user.username}</strong>
               <button
                 className="btn ghost"
                 style={{ padding: "0.3rem 0.6rem", fontSize: "0.85rem" }}
